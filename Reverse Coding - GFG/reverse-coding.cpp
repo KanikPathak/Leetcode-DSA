@@ -7,14 +7,9 @@ using namespace std;
 class Solution {
   public:
     int sumOfNaturals(int n) {
-        // code here
-        int sum=0;
-        for(int i=1; i<=n; i++){
-         sum += i;
-            if(sum >= 1000000007)
-                sum=sum%1000000007;
-        }
-    return sum;
+    
+    return  ((long long)n * (n+1) /2)% 1000000007 ;
+   
     }
 };
 
